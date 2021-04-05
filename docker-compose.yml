@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  spark:
+    container_name: spark-standalone
+    build: ./spark
+    ports: 
+      - "4040:4040"
+    networks:
+      spark-net: {}
+networks:
+  spark-net: 
